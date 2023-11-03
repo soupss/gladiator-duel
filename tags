@@ -9,11 +9,19 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20221106.0/
-Game	Game.py	/^class Game:$/;"	c
-__del__	Game.py	/^    def __del__(self):$/;"	m	class:Game
-__init__	Game.py	/^    def __init__(self):$/;"	m	class:Game
-events	Game.py	/^    def events(self):$/;"	m	class:Game
+GREEN	settings.py	/^GREEN = (0, 255, 0)$/;"	v
+Game	game.py	/^class Game:$/;"	c
+Player	player.py	/^class Player:$/;"	c
+WHITE	settings.py	/^WHITE = (255, 255, 255)$/;"	v
+WINDOW_HEIGHT	settings.py	/^WINDOW_HEIGHT = 600$/;"	v
+WINDOW_WIDTH	settings.py	/^WINDOW_WIDTH = 800$/;"	v
+__del__	game.py	/^    def __del__(self):$/;"	m	class:Game
+__init__	game.py	/^    def __init__(self):$/;"	m	class:Game
+__init__	player.py	/^    def __init__(self, pos, color):$/;"	m	class:Player
+draw	player.py	/^    def draw(self, screen):$/;"	m	class:Player
+events	game.py	/^    def events(self):$/;"	m	class:Game
 gladiator-duel	README.md	/^# gladiator-duel$/;"	c
-isRunning	Game.py	/^    def isRunning(self):$/;"	m	class:Game
+isRunning	game.py	/^    def isRunning(self):$/;"	m	class:Game
 main	main.py	/^def main():$/;"	f
-update	Game.py	/^    def update(self):$/;"	m	class:Game
+update	game.py	/^    def update(self):$/;"	m	class:Game
+update	player.py	/^    def update(self):$/;"	m	class:Player

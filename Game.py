@@ -1,16 +1,18 @@
-import pygame
 import sys
+import pygame
+
+from settings import WINDOW_WIDTH, WINDOW_HEIGHT, GREEN, WHITE
+from player import Player
 
 
 class Game:
     def __init__(self):
         pygame.init()
-        window_width = 640
-        window_height = 480
-        window_size = (window_width, window_height)
+        window_size = (WINDOW_WIDTH, WINDOW_HEIGHT)
         self.screen = pygame.display.set_mode(window_size)
         pygame.display.set_caption('Duel')
         self.running = True
+        self.player1 = Player((400, 400), GREEN)
 
 
     def __del__(self):
@@ -30,7 +32,8 @@ class Game:
                 if event.type == pygame.QUIT:
                     self.running = False
 
-
     def update(self):
-        self.screen.fill((0, 120, 255))
+        WHITE = (255, 255, 255)
+        self.screen.fill(WHITE)
+        self.player1.draw(self.screen)
         pygame.display.flip()
