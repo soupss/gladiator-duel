@@ -13,7 +13,7 @@ class Game:
         self.running = True
 
 
-    def __del__(self);
+    def __del__(self):
         pygame.quit()
         sys.exit()
 

@@ -6,6 +6,7 @@ def main():
     while game.isRunning():
         game.events()
         game.update()
+    del game
 
 
 if __name__ == "__main__":
